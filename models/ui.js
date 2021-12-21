@@ -22,6 +22,7 @@ export class UI{
         const choicesContainer = document.getElementById("options");
         choicesContainer.innerHTML = "";
 
+        choices.sort(() => Math.random()-0.5)
         for(let i = 0; i < choices.length; i++){
             const button = document.createElement("button");
             button.addEventListener("click", () => callback(choices[i]));
