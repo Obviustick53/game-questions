@@ -8,6 +8,7 @@ html, body{
 
 *{
     font-family: 'Oswald', sans-serif;
+    transition: all 0.35s;
 }
 
 body {
@@ -52,6 +53,7 @@ h1{
 .button:hover{
     cursor: pointer;
     background: #57636e;
+    transform: scale(1.1);
 }
 
 #progress{
@@ -60,5 +62,6 @@ h1{
 
 #score{
     font-size: 20px;
+    text-align: right;
 }
     
