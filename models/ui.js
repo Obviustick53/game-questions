@@ -35,15 +35,14 @@ export class UI{
     }
 
     showScoresFinal(score) {
-        const gameOverHTML = ` 
+        const gameOverHTML = `
             <h1>Resultado</h1>
             <h2 id="scorefinal">Tu puntaje es: ${score * 200}</h2>
             <hr>
-            <p>Nombre: <input type="text" name="name" id = "username" placeholder = "Escriba su nombre"/></p>
-            <button class = "button" id="saveScoreBtn" type ="submit" onclick="saveHighScore(event)">Guardar Registro</button>
-            <hr>
-            <a href="./quiz.html" class="btn">Jugar de Nuevo</a>
-            <a href="./index.html" class="btn">Ir al Home</a>
+            <div id="home" class="flex-column flex-center">
+                <a href="./quiz.html" class="btn">Jugar de Nuevo</a>
+                <a href="./index.html" class="btn">Ir al Home</a>
+            </div>
           `;
         // <h2 id="score">Your scores: ${quiz.score}</h2>
     
@@ -51,10 +50,17 @@ export class UI{
         element.innerHTML = gameOverHTML;
     }
 
+    saveHighScore(){
+
+        console.log("aaaaaa")
+
+    }
+
+
     showCurrentScore(score){
 
         var scoreElement = document.getElementById("current")
-        scoreElement.innerHTML = `Score ${score * 200}`
+        scoreElement.innerHTML = `Puntaje:  ${score * 200}`
     };
 
 

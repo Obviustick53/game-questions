@@ -16,7 +16,7 @@ const ronda1 = [
         answer: "Roma",
     },
     {
-        question: "Quien descubrio Amrecia ?",
+        question: "Quien descubrio America ?",
         choices: ["Simon Bolivar","Alvaro Uribe", "Cristobal Colon", "Pablo Escobar"],
         answer: "Cristobal Colon",
     },

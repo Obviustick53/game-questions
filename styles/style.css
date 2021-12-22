@@ -72,6 +72,16 @@ h1{
     outline: 0;
 }
 
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
 #current{
     font-size: 20px;
     text-align: right;
